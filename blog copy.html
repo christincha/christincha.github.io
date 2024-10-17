@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingyuan LI Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1px 20px;
+        }
+
+        /* Home Section with Background Image */
+        #home {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        #home h1 {
+            margin-top: 60px;
+            font-size: 2.5rem;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            margin-top: 0 px;
+        }
+
+        /* About Section */
+        #about {
+            padding: 10px 0;
+            background-color: #f8f9fa;
+        }
+
+        #about h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            text-align: left;
+            max-width: 800px;
+            margin: 10pt auto;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 10px 0;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .project img {
+            max-width: 30%;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .project-details {
+            padding: 10px;
+            flex: 1;
+        }
+
+        .project-details h3 {
+            margin-top: 0;
+        }
+
+        .project-details p {
+            line-height: 1;
+            color: #333;
+            margin-bottom: 0 px;
+            padding: 0 px;
+            margin: 0 px;
+        }
+
+        .tech-stack {
+            margin-top: 0.5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 0.5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .github-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 60px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #contact form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        #contact form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section with Background Image -->
+    <section id="home">
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <!-- Personal Photo -->
+                <div style="margin-right: 20px;">
+                    <img src="personal-image2.jpg" alt="Your Photo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+                </div>
+
+                <!-- Introduction Text -->
+                <div style="text-align: center; color: black;">
+                    <h1>Hello, I'm Jingyuan Li</h1>
+                    <p> Fifth year PhD @ University of Washington </p>
+                    <p class="tm-margin-b-5"> <a class="tm-margin-b-10" href="Jingyli6@uw.edu"> [Email:jingyli6@uw.edu] </a>
+                     <!-- <a class="tm-margin-b-10" href="https://github.com/christincha"> [GitHub]</a>  -->
+                     <a class="tm-margin-b-10" href="https://scholar.google.com/citations?user=BEhp15IAAAAJ&hl=zh-CN"> [Scholar] </a> 
+                     <a class="tm-margin-b-10" href="https://www.linkedin.com/in/jingyuan-li-898225175/"> [LinkedIn] </a></p> 
+                    
+                </div>
+
+                <!-- Social Icons -->
+            </div>
+        </div>
+    </section>
+       
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a PhD student at NeuroAI Lab, <a class="tm-margin-b-10" href="https://www.washington.edu/">University of Washihngton</a> , Seattle, advised by <a class="tm-margin-b-10" href="https://faculty.washington.edu/shlizee/">Prof.Eli Shlizerman</a>. Before I join the University of Washington, I worked with <a class="tm-margin-b-10" href="https://www.cnbc.cmu.edu/~tai/">Prof.Tai Sing Lee</a> at Carnegie Mellon University (CMU).</p>
+            <p> My primary interest lies in general understanding of time-series data, particular to time-series neural signals and time-series behavior recordings. 
+                <br>In terms of method, I focus on deep learning based method, such as Recurrent Neural Network, Graph Neural Network and Transformer. 
+                <br>My research topics include <b>Semi(Un)-supervised Learning</b>, <b>Representation Learning</b>, <b>Computational Neuroscience</b>, <b>Brain Computer Interface</b>, <b>Robust and Uncertainty Evaluation</b>.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Publications</h2>
+
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="publications/DCoND.jpg" alt="Project 1 Figure">
+                <div class="project-details">
+                    <h3>Brain-to-Text Decoding with Context-Aware Neural Representations and Large Language Models</h3>
+                    <p>Authors: <u>Jingyuan Li</u>, Trung Le, Chaofei Fan, Mingfei Chen, Eli Shlizerman. <br><i>In submission to ICLR 2025</i></p>
+                    <p>I developed DCoND-LIFT, a method that leverages large language models to translate neural signals into text, reducing the word error rate from 9.93% to 5.77% compared to the baseline.</p>
+                    <p class="tech-stack">Keywords:<b>Brain-Computer Interface</b>, <b>Brain-to-Text</b>, <b>Large Language Model</b>, <b>Phoneme Decoding</b></p>
+                    <!-- <p class="tech-stack">Tech stack: Python, TensorFlow, Keras</p> -->
+                    <!-- <a class="github-link" href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a> -->
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="publications/icassp.jpg" alt="Project 2 Figure">
+                <div class="project-details">
+                    <h3>Translating Mental Imaginations into Characters with Codebooks and Dynamics-Enhanced Decoding</h3>
+                    <p>Authors: <u>Jingyuan Li</u>,Yansen Wang, Nie Lin, Dongsheng Li. <br> <i>In submission to ICASSP 2025</i> <br> <a class="tm-margin-b-10" href="https://arxiv.org/abs/2409.16816">Preprint</a> </p>
+                    <p>I introduced four mental tasks that map EEG recordings to 35 characters, including letters and numbers, with high accuracy, significantly improving over direct character imagination by aounrd 8.5%.</p>
+                    <p class="tech-stack">Keywords: EEG, Brain-Computer Interface, Brain-to-Character, GRU, CNN</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="publications/cosyne20242.jpg" alt="Project 2 Figure">
+                <div class="project-details">
+                    <h3>Self-supervised behavior modeling with dense keypoint tracking</h3>
+                    <p>Authors: Ying Yu*, <u>Jingyuan Li</u>*, Kun Su, Anna Bowen, Carlos Campos. *Equal contribution. <br><i>Cosyne 2024 Oral </i> <br><a class="tm-margin-b-10" href="https://www.youtube.com/watch?v=Kq5f36OwFKU">Talk</a> </p>
+                    <p>I presented 2D to 3D mapping of animal posture, from which behavior segment can be retrieved with one-shot example.</p>
+                    <p class="tech-stack">Keywords: Posture modeling, Behavior segmentation</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <img src="publications/amag.jpg" alt="Project 2 Figure">
+                <div class="project-details">
+                    <h3>AMAG: Additive, Multiplicative and Adaptive Graph Neural Network For Forecasting Neural Activity</h3>
+                    <p>Authors: <u>Jingyuan Li</u>, Leo Scholl, Trung Le, Pavithra Rajeswaran, Amy Orsborn, Eli Shlizerman. <br> <i> NeurIPS 2023 </i><br> <a class="tm-margin-b-10" href="https://openreview.net/forum?id=7ntI4kcoqG">Paper</a> </p>
+                    <p>I introduce a Graph Neural Network for predicting future neural signals, which helps to recover the underlying neural dependencies.</p>
+                    <p class="tech-stack">Keywords: intracortical recordings, Brain-Computer Interface, Graph Neural Networks</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project">
+                <img src="publications/alsar.jpg" alt="Project 2 Figure">
+                <div class="project-details">
+                    <h3>AL-SAR: Active Learning for Skeleton-based Action Recognition</h3>
+                    <p>Authors: <u>Jingyuan Li</u>, Trung Le, Eli Shlizerman. <br><i>IEEE TNNLS, 2023</i> <br><a class="tm-margin-b-10" href="https://pubmed.ncbi.nlm.nih.gov/37581978/">Paper</a> </p>
+                    <p>I proposed an active learning method for semi-supervised behavior recognition, achieving strong action recognition performance under the circumstances when only a limited number of annotated samples are available.</p>
+                    <p class="tech-stack">Keywords: Active Learning, semi-supervised Learning, Action Recognition</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="publications/openlabcluster.jpg" alt="Project 2 Figure">
+                <div class="project-details">
+                    <h3>OpenLabCluster: Active Learning Based Clustering and Classification of Animal Behaviors in Videos Based on Automatically Extracted Kinematic Body Keypoints</h3>
+                    <p>Authors: <u>Jingyuan Li</u>, Moishe Keselman, Eli Shlizerman. <br> <i>arXiv, 2022 </i><br> <a class="tm-margin-b-10" href="https://www.biorxiv.org/content/10.1101/2022.10.10.511660v1.full.pdf">Preprint</a>
+                        <a class="tm-margin-b-10" href="https://github.com/shlizee/OpenLabCluster">GitHub</a> </p>
+                    <p>I implemented an active learning pipeline for animal behavior recognition requiring a few of labeled animal behavior examples, a GUI was introduced for general uses.</p>
+                    <p class="tech-stack">Keywords: Animal Behavior Recognition, Active Learning, Graphic User Interface</p>
+                </div>
+            </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xqakkjze" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jingyuan Li. All rights reserved.</p>
+    </footer>
+</body>
+</html>
